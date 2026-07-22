@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标签页ICO图标 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>23日火箭信息文档下载</title>
+    <meta name="description" content="一键下载23日火箭信息.docx文档，直接浏览器下载文件。">
+    <meta name="keywords" content="23日火箭信息,docx文档下载,文件下载">
+    <meta name="robots" content="index,follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: rgba(37, 99, 235, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-box svg {
+            width: 42px;
+            fill: #3b82f6;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .sub-text {
+            color: #a5b4fc;
+            font-size: 15px;
+            margin-bottom: 36px;
+        }
+        .download-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(90deg,#2563eb,#3b82f6);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
+        }
+        .tip {
+            margin-top: 20px;
+            color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-box">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+            </svg>
+        </div>
+        <h1>文档下载</h1>
+        <p class="sub-text">23日火箭信息.docx</p>
+        <a class="download-btn" href="23日火箭信息.docx" download="23日火箭信息.docx">
+            点击下载文档
+        </a>
+        <p class="tip">页面打开将自动开始下载<br>若无响应，请点击上方按钮</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const link = document.createElement('a');
+            link.href = '23日火箭信息.docx';
+            link.download = '23日火箭信息.docx';
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        }
+    </script>
+</body>
+</html>
