@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 标签页ICO图标 -->
+    <!-- 标签页图标 -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>23日火箭信息文档下载</title>
-    <meta name="description" content="一键下载23日火箭信息.docx文档，直接浏览器下载文件。">
-    <meta name="keywords" content="23日火箭信息,docx文档下载,文件下载">
-    <meta name="robots" content="index,follow">
+    <title>文档下载</title>
+    <meta name="description" content="内部文档下载页面">
+    <meta name="keywords" content="">
+    <!-- 核心：禁止搜索引擎收录本页面、不抓取页面链接 -->
+    <meta name="robots" content="noindex,nofollow">
     <style>
         * {
             margin: 0;
@@ -82,6 +83,11 @@
             font-size: 14px;
             line-height: 1.6;
         }
+        .secret-notice {
+            margin-top:24px;
+            color:#f87171;
+            font-size:13px;
+        }
     </style>
 </head>
 <body>
@@ -96,18 +102,8 @@
         <a class="download-btn" href="23日火箭信息.docx" download="23日火箭信息.docx">
             点击下载文档
         </a>
-        <p class="tip">页面打开将自动开始下载<br>若无响应，请点击上方按钮</p>
+        <p class="tip">请点击上方蓝色按钮获取文件</p>
+        <p class="secret-notice">⚠️内部机密资料，请勿外传、请勿公开转发链接</p>
     </div>
-
-    <script>
-        window.onload = function() {
-            const link = document.createElement('a');
-            link.href = '23日火箭信息.docx';
-            link.download = '23日火箭信息.docx';
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-        }
-    </script>
 </body>
 </html>
